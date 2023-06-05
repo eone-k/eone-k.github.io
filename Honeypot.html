@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Honey pot">
+    <meta name="description" content="">
+    <title>Honeypot</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Honeypot.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.11.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/NewProject.png"
+}</script>
+    <meta name="theme-color" content="#803bec">
+    <meta property="og:title" content="Honeypot">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-grey-80 u-header u-header" id="sec-8624"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="3000" data-image-height="3000">
+          <img src="images/NewProject.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <p class="u-text u-text-default u-text-1"> Aria's E-Portfolio for IOT and Cybersecurity</p>
+        <a href="Home.html" class="u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-1">Home</a>
+      </div></header>
+    <section class="u-clearfix u-grey-80 u-section-1" id="sec-85b9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">Honey pot<br>
+        </h1>
+        <p class="u-text u-text-default u-text-2">In this activity we will be using pentbox in kali, it's important to note that pentbox is not usually preinstalled in kali linux but installing it was super simple<br>you just have to go to Technicaldata's Github and clone his GIT repo, however there are a lot of different versions of Pentbox and a lot of different forks which caused a lot of confusion as to which one the lecture material was referencing, however i went with the most popular one and it worked just fine, we open our app by using CD and going to the location of which we installed pentbox and running the script, here's what it looks like when we open it:
+        </p>
+        <img class="u-image u-image-default u-image-1" src="images/image4.png" alt="" data-image-width="1006" data-image-height="919">
+        <p class="u-text u-text-default u-text-3">We select number 2&nbsp;</p>
+        <img class="u-image u-image-default u-image-2" src="images/image5.png" alt="" data-image-width="854" data-image-height="857">
+        <p class="u-text u-text-default u-text-4">We select option 3 which is honeypot&nbsp;</p>
+        <img class="u-image u-image-default u-image-3" src="images/image6.png" alt="" data-image-width="1016" data-image-height="335">
+        <p class="u-text u-text-default u-text-5">I chose the automatic config here for sake of convinience</p>
+        <img class="u-image u-image-default u-image-4" src="images/image7.png" alt="" data-image-width="575" data-image-height="90">
+        <p class="u-text u-text-default u-text-6">Here we get a confirmation that it's activated<br>after putting my computer's locan IP followed by the port 80 in a web browser we get this:
+        </p>
+        <img class="u-image u-image-default u-image-5" src="images/image9.png" alt="" data-image-width="302" data-image-height="127">
+        <p class="u-text u-text-default u-text-7">now if we go back to our Terminal we get this:<br>
+        </p>
+        <img class="u-image u-image-default u-image-6" src="images/image10.png" alt="" data-image-width="545" data-image-height="418">
+        <p class="u-text u-text-default u-text-8">We have successfully made and used a honeypot on ourselves here, now there are a couple of things i would like to touch on,<br>i believe this, in theory is great, however there are easier ways to do this that doesn't require you to use Kali at all, reducing the time and skill needed to make an actual honeypot, all you have to do is to go to any IP grabber website such as grabify, it could also redirect the user to a real website and the website URL can be changed to make it more believable, since if you are actually using this in real world people are less likely to click on 192.168.1.0:80 than to click on a link that says cutepuppies.com here's how it works, this is the home page:
+        </p>
+        <img class="u-image u-image-default u-image-7" src="images/image11.png" alt="" data-image-width="1920" data-image-height="701">
+        <p class="u-text u-text-default u-text-9">We will just add any website we wish the target to be sent to after we grab their details, i'll use&nbsp;www.emu.edu.tr, then it asks you to customize the URL&nbsp;</p>
+        <img class="u-image u-image-default u-image-8" src="images/image12.png" alt="" data-image-width="1920" data-image-height="894">
+        <p class="u-text u-text-default u-text-10">We can change the extention to make it even more realistic</p>
+        <img class="u-image u-image-default u-image-9" src="images/image13.png" alt="" data-image-width="1560" data-image-height="391">
+        <p class="u-text u-text-default u-text-11">As i said, any target is more likely to click on&nbsp;https://imghost.pics/join.php?id=EKLY83 compared to a random IP address, also setting it up is easy, takes less than a minute, here is how the website shows you the details of someone who clicked your link&nbsp;</p>
+        <img class="u-image u-image-default u-image-10" src="images/image14.png" alt="" data-image-width="1604" data-image-height="188">
+        <p class="u-text u-text-default u-text-12">The exact same results, maybe even better, more realistic for the target since they will be redirected to an actual website and half the hassle for the person setting the trap, hope you enjoyed this experiment!</p>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a418"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> Copyright © 2023 EONE. All rights reserved.</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  
+</body></html>
